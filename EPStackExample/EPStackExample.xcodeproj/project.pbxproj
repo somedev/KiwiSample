@@ -1,0 +1,521 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		643EAFC117F998D50069B413 /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 643EAFC017F998D50069B413 /* SenTestingKit.framework */; };
+		64D726BF17F9848300F6B3F6 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 64D726BE17F9848300F6B3F6 /* Foundation.framework */; };
+		64D726C117F9848300F6B3F6 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 64D726C017F9848300F6B3F6 /* CoreGraphics.framework */; };
+		64D726C317F9848300F6B3F6 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 64D726C217F9848300F6B3F6 /* UIKit.framework */; };
+		64D726C917F9848300F6B3F6 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 64D726C717F9848300F6B3F6 /* InfoPlist.strings */; };
+		64D726CB17F9848300F6B3F6 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 64D726CA17F9848300F6B3F6 /* main.m */; };
+		64D726CF17F9848300F6B3F6 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 64D726CE17F9848300F6B3F6 /* AppDelegate.m */; };
+		64D726D117F9848300F6B3F6 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 64D726D017F9848300F6B3F6 /* Images.xcassets */; };
+		64D726D817F9848300F6B3F6 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 64D726D717F9848300F6B3F6 /* XCTest.framework */; };
+		64D726D917F9848300F6B3F6 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 64D726BE17F9848300F6B3F6 /* Foundation.framework */; };
+		64D726DA17F9848300F6B3F6 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 64D726C217F9848300F6B3F6 /* UIKit.framework */; };
+		64D726E217F9848300F6B3F6 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 64D726E017F9848300F6B3F6 /* InfoPlist.strings */; };
+		64D726EF17F985DA00F6B3F6 /* EPStack.m in Sources */ = {isa = PBXBuildFile; fileRef = 64D726ED17F985DA00F6B3F6 /* EPStack.m */; };
+		64D726F217F9895900F6B3F6 /* EPStack_tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 64D726F117F9895900F6B3F6 /* EPStack_tests.m */; };
+		6AF8C835A5BF4014B1657F29 /* libPods-EPStackExampleTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 9C9CAD8B1CFA4E02AA0487AF /* libPods-EPStackExampleTests.a */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		64D726DB17F9848300F6B3F6 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 64D726B317F9848300F6B3F6 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 64D726BA17F9848300F6B3F6;
+			remoteInfo = EPStackExample;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		3C55C5363C0043B6A81CF939 /* Pods-EPStackExampleTests.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EPStackExampleTests.xcconfig"; path = "Pods/Pods-EPStackExampleTests.xcconfig"; sourceTree = "<group>"; };
+		643EAFC017F998D50069B413 /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
+		64D726BB17F9848300F6B3F6 /* EPStackExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EPStackExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		64D726BE17F9848300F6B3F6 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		64D726C017F9848300F6B3F6 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		64D726C217F9848300F6B3F6 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		64D726C617F9848300F6B3F6 /* EPStackExample-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "EPStackExample-Info.plist"; sourceTree = "<group>"; };
+		64D726C817F9848300F6B3F6 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		64D726CA17F9848300F6B3F6 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		64D726CC17F9848300F6B3F6 /* EPStackExample-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "EPStackExample-Prefix.pch"; sourceTree = "<group>"; };
+		64D726CD17F9848300F6B3F6 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		64D726CE17F9848300F6B3F6 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		64D726D017F9848300F6B3F6 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		64D726D617F9848300F6B3F6 /* EPStackExampleTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = EPStackExampleTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		64D726D717F9848300F6B3F6 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		64D726DF17F9848300F6B3F6 /* EPStackExampleTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "EPStackExampleTests-Info.plist"; sourceTree = "<group>"; };
+		64D726E117F9848300F6B3F6 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		64D726ED17F985DA00F6B3F6 /* EPStack.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = EPStack.m; path = ../../EPStack/EPStack.m; sourceTree = "<group>"; };
+		64D726EE17F985DA00F6B3F6 /* EPStack.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = EPStack.h; path = ../../EPStack/EPStack.h; sourceTree = "<group>"; };
+		64D726F117F9895900F6B3F6 /* EPStack_tests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EPStack_tests.m; sourceTree = "<group>"; };
+		9C9CAD8B1CFA4E02AA0487AF /* libPods-EPStackExampleTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-EPStackExampleTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		64D726B817F9848300F6B3F6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				64D726C117F9848300F6B3F6 /* CoreGraphics.framework in Frameworks */,
+				64D726C317F9848300F6B3F6 /* UIKit.framework in Frameworks */,
+				64D726BF17F9848300F6B3F6 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		64D726D317F9848300F6B3F6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				643EAFC117F998D50069B413 /* SenTestingKit.framework in Frameworks */,
+				64D726D817F9848300F6B3F6 /* XCTest.framework in Frameworks */,
+				64D726DA17F9848300F6B3F6 /* UIKit.framework in Frameworks */,
+				64D726D917F9848300F6B3F6 /* Foundation.framework in Frameworks */,
+				6AF8C835A5BF4014B1657F29 /* libPods-EPStackExampleTests.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		64D726B217F9848300F6B3F6 = {
+			isa = PBXGroup;
+			children = (
+				64D726C417F9848300F6B3F6 /* EPStackExample */,
+				64D726DD17F9848300F6B3F6 /* EPStackExampleTests */,
+				64D726BD17F9848300F6B3F6 /* Frameworks */,
+				64D726BC17F9848300F6B3F6 /* Products */,
+				3C55C5363C0043B6A81CF939 /* Pods-EPStackExampleTests.xcconfig */,
+			);
+			sourceTree = "<group>";
+		};
+		64D726BC17F9848300F6B3F6 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				64D726BB17F9848300F6B3F6 /* EPStackExample.app */,
+				64D726D617F9848300F6B3F6 /* EPStackExampleTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		64D726BD17F9848300F6B3F6 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				643EAFC017F998D50069B413 /* SenTestingKit.framework */,
+				64D726BE17F9848300F6B3F6 /* Foundation.framework */,
+				64D726C017F9848300F6B3F6 /* CoreGraphics.framework */,
+				64D726C217F9848300F6B3F6 /* UIKit.framework */,
+				64D726D717F9848300F6B3F6 /* XCTest.framework */,
+				9C9CAD8B1CFA4E02AA0487AF /* libPods-EPStackExampleTests.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		64D726C417F9848300F6B3F6 /* EPStackExample */ = {
+			isa = PBXGroup;
+			children = (
+				64D726F017F985E200F6B3F6 /* EPStack */,
+				64D726CD17F9848300F6B3F6 /* AppDelegate.h */,
+				64D726CE17F9848300F6B3F6 /* AppDelegate.m */,
+				64D726D017F9848300F6B3F6 /* Images.xcassets */,
+				64D726C517F9848300F6B3F6 /* Supporting Files */,
+			);
+			path = EPStackExample;
+			sourceTree = "<group>";
+		};
+		64D726C517F9848300F6B3F6 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				64D726C617F9848300F6B3F6 /* EPStackExample-Info.plist */,
+				64D726C717F9848300F6B3F6 /* InfoPlist.strings */,
+				64D726CA17F9848300F6B3F6 /* main.m */,
+				64D726CC17F9848300F6B3F6 /* EPStackExample-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		64D726DD17F9848300F6B3F6 /* EPStackExampleTests */ = {
+			isa = PBXGroup;
+			children = (
+				64D726F117F9895900F6B3F6 /* EPStack_tests.m */,
+				64D726DE17F9848300F6B3F6 /* Supporting Files */,
+			);
+			path = EPStackExampleTests;
+			sourceTree = "<group>";
+		};
+		64D726DE17F9848300F6B3F6 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				64D726DF17F9848300F6B3F6 /* EPStackExampleTests-Info.plist */,
+				64D726E017F9848300F6B3F6 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		64D726F017F985E200F6B3F6 /* EPStack */ = {
+			isa = PBXGroup;
+			children = (
+				64D726ED17F985DA00F6B3F6 /* EPStack.m */,
+				64D726EE17F985DA00F6B3F6 /* EPStack.h */,
+			);
+			name = EPStack;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		64D726BA17F9848300F6B3F6 /* EPStackExample */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 64D726E717F9848300F6B3F6 /* Build configuration list for PBXNativeTarget "EPStackExample" */;
+			buildPhases = (
+				64D726B717F9848300F6B3F6 /* Sources */,
+				64D726B817F9848300F6B3F6 /* Frameworks */,
+				64D726B917F9848300F6B3F6 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = EPStackExample;
+			productName = EPStackExample;
+			productReference = 64D726BB17F9848300F6B3F6 /* EPStackExample.app */;
+			productType = "com.apple.product-type.application";
+		};
+		64D726D517F9848300F6B3F6 /* EPStackExampleTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 64D726EA17F9848300F6B3F6 /* Build configuration list for PBXNativeTarget "EPStackExampleTests" */;
+			buildPhases = (
+				6370BFAFB4D4424A90BBF112 /* Check Pods Manifest.lock */,
+				64D726D217F9848300F6B3F6 /* Sources */,
+				64D726D317F9848300F6B3F6 /* Frameworks */,
+				64D726D417F9848300F6B3F6 /* Resources */,
+				A43E0F72D6174FD99F6961BE /* Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				64D726DC17F9848300F6B3F6 /* PBXTargetDependency */,
+			);
+			name = EPStackExampleTests;
+			productName = EPStackExampleTests;
+			productReference = 64D726D617F9848300F6B3F6 /* EPStackExampleTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		64D726B317F9848300F6B3F6 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0500;
+				ORGANIZATIONNAME = "Eduard Panasiuk";
+				TargetAttributes = {
+					64D726D517F9848300F6B3F6 = {
+						TestTargetID = 64D726BA17F9848300F6B3F6 /* EPStackExample */;
+					};
+				};
+			};
+			buildConfigurationList = 64D726B617F9848300F6B3F6 /* Build configuration list for PBXProject "EPStackExample" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 64D726B217F9848300F6B3F6;
+			productRefGroup = 64D726BC17F9848300F6B3F6 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				64D726BA17F9848300F6B3F6 /* EPStackExample */,
+				64D726D517F9848300F6B3F6 /* EPStackExampleTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		64D726B917F9848300F6B3F6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				64D726C917F9848300F6B3F6 /* InfoPlist.strings in Resources */,
+				64D726D117F9848300F6B3F6 /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		64D726D417F9848300F6B3F6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				64D726E217F9848300F6B3F6 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		6370BFAFB4D4424A90BBF112 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		A43E0F72D6174FD99F6961BE /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Pods-EPStackExampleTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		64D726B717F9848300F6B3F6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				64D726CF17F9848300F6B3F6 /* AppDelegate.m in Sources */,
+				64D726EF17F985DA00F6B3F6 /* EPStack.m in Sources */,
+				64D726CB17F9848300F6B3F6 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		64D726D217F9848300F6B3F6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				64D726F217F9895900F6B3F6 /* EPStack_tests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		64D726DC17F9848300F6B3F6 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 64D726BA17F9848300F6B3F6 /* EPStackExample */;
+			targetProxy = 64D726DB17F9848300F6B3F6 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		64D726C717F9848300F6B3F6 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				64D726C817F9848300F6B3F6 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		64D726E017F9848300F6B3F6 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				64D726E117F9848300F6B3F6 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		64D726E517F9848300F6B3F6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		64D726E617F9848300F6B3F6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		64D726E817F9848300F6B3F6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "EPStackExample/EPStackExample-Prefix.pch";
+				INFOPLIST_FILE = "EPStackExample/EPStackExample-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		64D726E917F9848300F6B3F6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "EPStackExample/EPStackExample-Prefix.pch";
+				INFOPLIST_FILE = "EPStackExample/EPStackExample-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		64D726EB17F9848300F6B3F6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3C55C5363C0043B6A81CF939 /* Pods-EPStackExampleTests.xcconfig */;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/EPStackExample.app/EPStackExample";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "EPStackExample/EPStackExample-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "EPStackExampleTests/EPStackExampleTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		64D726EC17F9848300F6B3F6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3C55C5363C0043B6A81CF939 /* Pods-EPStackExampleTests.xcconfig */;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/EPStackExample.app/EPStackExample";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "EPStackExample/EPStackExample-Prefix.pch";
+				INFOPLIST_FILE = "EPStackExampleTests/EPStackExampleTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		64D726B617F9848300F6B3F6 /* Build configuration list for PBXProject "EPStackExample" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				64D726E517F9848300F6B3F6 /* Debug */,
+				64D726E617F9848300F6B3F6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		64D726E717F9848300F6B3F6 /* Build configuration list for PBXNativeTarget "EPStackExample" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				64D726E817F9848300F6B3F6 /* Debug */,
+				64D726E917F9848300F6B3F6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		64D726EA17F9848300F6B3F6 /* Build configuration list for PBXNativeTarget "EPStackExampleTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				64D726EB17F9848300F6B3F6 /* Debug */,
+				64D726EC17F9848300F6B3F6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 64D726B317F9848300F6B3F6 /* Project object */;
+}
