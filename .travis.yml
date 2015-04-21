@@ -1,0 +1,4 @@
+language: objective-c
+script:
+  - xctool -workspace EPStackExample/EPStackExample.xcworkspace -scheme EPStackExample -sdk iphonesimulator ONLY_ACTIVE_ARCH=NO
+  - xctool test -workspace EPStackExample.xcworkspace -scheme EPStackExampleTests -sdk iphonesimulator ONLY_ACTIVE_ARCH=NO
