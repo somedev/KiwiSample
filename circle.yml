@@ -9,6 +9,7 @@ machine:
     
 dependencies:
   pre:
+    - ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
     - brew update || brew update
     - brew outdated xctool || brew upgrade xctool
     
