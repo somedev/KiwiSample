@@ -5,10 +5,6 @@ machine:
     XCODE_WORKSPACE: "EPStackExample/EPStackExample.xcworkspace"
     LANG: en_US.UTF-8
     
-dependencies:
-  pre:
-    - brew update || brew update
-    - brew outdated xctool || brew upgrade xctool
     
 test:
   override:
