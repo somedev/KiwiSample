@@ -2,7 +2,7 @@ machine:
   xcode:
     version: '7.1'
   environment:
-    XCODE_WORKSPACE: "EPStackExample/EPStackExample.xcworkspace" environment:
+    XCODE_WORKSPACE: "EPStackExample/EPStackExample.xcworkspace"
     LANG: en_US.UTF-8
 
 dependencies:
