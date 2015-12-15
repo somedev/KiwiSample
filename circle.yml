@@ -1,6 +1,6 @@
 machine:
   xcode:
-    version: '7.1'
+    version: '7.1.1'
   environment:
     XCODE_WORKSPACE: "EPStackExample/EPStackExample.xcworkspace"
     LANG: en_US.UTF-8
