@@ -9,7 +9,8 @@ machine:
     
 dependencies:
   pre:
-    - brew uninstall xctool && brew install --HEAD xctool
+    - brew update || brew update
+    - brew outdated xctool || brew upgrade xctool
     
 test:
   override:
