@@ -1,3 +1,19 @@
 machine:
   xcode:
-    version: "7.1"
+    version: '7.1'
+  environment:
+    XCODE_WORKSPACE: "EPStackExample/EPStackExample.xcworkspace"
+
+dependencies:
+  cache_directories:
+    - "EPStackExample/Pods"
+  override:    
+    - sudo gem install cocoapods xcpretty obcd -N
+    - pod install --project-directory=EPStackExample
+    
+test:
+  override:
+    - set -o pipefail && xcodebuild -workspace EPStackExample/EPStackExample.xcworkspace -scheme
+      EPStackExampleTests -sdk iphonesimulator -destination "platform=iOS Simulator,name=iPhone 6"
+      GCC_INSTRUMENT_PROGRAM_FLOW_ARCS=YES GCC_GENERATE_TEST_COVERAGE_FILES=YES clean test | xcpretty -c 
+      --report junit --output ${CIRCLE_TEST_REPORTS}/junit.xml
