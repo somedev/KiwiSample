@@ -6,6 +6,11 @@ machine:
   environment:
     XCODE_WORKSPACE: "EPStackExample/EPStackExample.xcworkspace"
     LANG: en_US.UTF-8
+    
+dependencies:
+  pre:
+    - brew uninstall xctool && brew install --HEAD xctool
+    
 test:
   override:
     - xctool
