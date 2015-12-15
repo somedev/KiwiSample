@@ -8,7 +8,6 @@ dependencies:
   cache_directories:
     - "EPStackExample/Pods"
   override:    
-    - sudo gem install cocoapods 
     - pod install --project-directory=EPStackExample
     
 test:
