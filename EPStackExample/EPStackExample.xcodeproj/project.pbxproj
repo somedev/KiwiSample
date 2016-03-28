@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		643EAFC117F998D50069B413 /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 643EAFC017F998D50069B413 /* SenTestingKit.framework */; };
 		64D726BF17F9848300F6B3F6 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 64D726BE17F9848300F6B3F6 /* Foundation.framework */; };
 		64D726C117F9848300F6B3F6 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 64D726C017F9848300F6B3F6 /* CoreGraphics.framework */; };
 		64D726C317F9848300F6B3F6 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 64D726C217F9848300F6B3F6 /* UIKit.framework */; };
@@ -15,7 +14,6 @@
 		64D726CB17F9848300F6B3F6 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 64D726CA17F9848300F6B3F6 /* main.m */; };
 		64D726CF17F9848300F6B3F6 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 64D726CE17F9848300F6B3F6 /* AppDelegate.m */; };
 		64D726D117F9848300F6B3F6 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 64D726D017F9848300F6B3F6 /* Images.xcassets */; };
-		64D726D817F9848300F6B3F6 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 64D726D717F9848300F6B3F6 /* XCTest.framework */; };
 		64D726D917F9848300F6B3F6 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 64D726BE17F9848300F6B3F6 /* Foundation.framework */; };
 		64D726DA17F9848300F6B3F6 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 64D726C217F9848300F6B3F6 /* UIKit.framework */; };
 		64D726E217F9848300F6B3F6 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 64D726E017F9848300F6B3F6 /* InfoPlist.strings */; };
@@ -74,8 +72,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				643EAFC117F998D50069B413 /* SenTestingKit.framework in Frameworks */,
-				64D726D817F9848300F6B3F6 /* XCTest.framework in Frameworks */,
 				64D726DA17F9848300F6B3F6 /* UIKit.framework in Frameworks */,
 				64D726D917F9848300F6B3F6 /* Foundation.framework in Frameworks */,
 				6AF8C835A5BF4014B1657F29 /* libPods-EPStackExampleTests.a in Frameworks */,
@@ -206,6 +202,7 @@
 				64D726D317F9848300F6B3F6 /* Frameworks */,
 				64D726D417F9848300F6B3F6 /* Resources */,
 				A43E0F72D6174FD99F6961BE /* Copy Pods Resources */,
+				9DD33B22C6B7CB58A297579C /* Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -283,6 +280,21 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		9DD33B22C6B7CB58A297579C /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-EPStackExampleTests/Pods-EPStackExampleTests-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		A43E0F72D6174FD99F6961BE /* Copy Pods Resources */ = {
@@ -456,7 +468,7 @@
 			baseConfigurationReference = 353F3D6293583F543A210193 /* Pods-EPStackExampleTests.debug.xcconfig */;
 			buildSettings = {
 				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
-				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/EPStackExample.app/EPStackExample";
+				BUNDLE_LOADER = "$(TEST_HOST)";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
 					"$(inherited)",
@@ -470,7 +482,7 @@
 				);
 				INFOPLIST_FILE = "EPStackExampleTests/EPStackExampleTests-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUNDLE_LOADER)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/EPStackExample.app/EPStackExample";
 				WRAPPER_EXTENSION = xctest;
 			};
 			name = Debug;
@@ -480,7 +492,7 @@
 			baseConfigurationReference = B510EF167E8375460CA75F01 /* Pods-EPStackExampleTests.release.xcconfig */;
 			buildSettings = {
 				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
-				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/EPStackExample.app/EPStackExample";
+				BUNDLE_LOADER = "$(TEST_HOST)";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
 					"$(inherited)",
@@ -490,7 +502,7 @@
 				GCC_PREFIX_HEADER = "EPStackExample/EPStackExample-Prefix.pch";
 				INFOPLIST_FILE = "EPStackExampleTests/EPStackExampleTests-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUNDLE_LOADER)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/EPStackExample.app/EPStackExample";
 				WRAPPER_EXTENSION = xctest;
 			};
 			name = Release;

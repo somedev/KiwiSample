@@ -4,11 +4,10 @@
 //  Created by Eduard Panasiuk on 30.09.13.
 //
 
-#import <SenTestingKit/SenTestingKit.h>
 #import <Kiwi.h>
 #import "EPStack.h"
 
-@interface EPStack_tests : SenTestCase
+@interface EPStack_tests : XCTestCase
 
 @end
 
